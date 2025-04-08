@@ -75,5 +75,5 @@ const ProductDetailsAccordian = ({
     </div>
   );
 };
-
+//Comment
 export default ProductDetailsAccordian;
