@@ -7,27 +7,27 @@ import { CiInstagram } from "react-icons/ci";
 const reviews = [
   {
     id: 1,
-    name: "Milinda Thakur",
+    name: "Juan Dela Cruz",
     instagram: "milli_thanur_123",
     image: "https://placehold.co/200x200",
     rating: 5,
-    text: "VIBECART has set a new standard in the fragrance market, offering exceptional quality at remarkably affordable prices.",
+    text: "BookstoreCart has set a new standard in the  market, offering exceptional quality at remarkably affordable prices.",
   },
   {
     id: 2,
-    name: "Shubhman Ravi",
+    name: "Thomas P. Reyes",
     instagram: "shubhman_92_ravi",
     image: "https://placehold.co/200x200",
     rating: 5,
-    text: "Amazed by the lasting power of these scents. VIBECART provides high-end fragrances at unmatched prices.",
+    text: "Amazed by the lasting power. BookstoreCart provides high-end products at unmatched prices.",
   },
   {
     id: 3,
-    name: "Raghav varma",
+    name: "Ana Marie De Luna",
     instagram: "raghav.varma_89",
     image: "https://placehold.co/200x200",
     rating: 5,
-    text: "Discovered my signature fragrance with VIBECART. The meticulous craftsmanship in their perfumes is truly impressive.",
+    text: "Discovered my signature product with BookstoreCart. The meticulous craftsmanship in their perfumes is truly impressive.",
   },
 ];
 const ReviewSection = () => {

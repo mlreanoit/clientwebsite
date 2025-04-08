@@ -6,7 +6,7 @@ import { Loader } from "lucide-react";
 import { Metadata } from "next";
 import React, { Suspense } from "react";
 export const metadata: Metadata = {
-  title: "Profile Page | VibeCart",
+  title: "Profile Page | BookstoreCart",
   description: "View Profile Page.",
 };
 

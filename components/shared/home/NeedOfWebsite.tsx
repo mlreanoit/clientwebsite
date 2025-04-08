@@ -10,8 +10,8 @@ const NeedOfWebsite = () => {
     },
     {
       icon: Droplet,
-      title: "FRAGRANCE FORWARD",
-      description: "Opulent and imported fragrance oils in each creation.",
+      title: "FAST CHANGING WORLD",
+      description: "Opulent and imported supplies in each creation.",
     },
     {
       icon: Wallet,
@@ -23,12 +23,12 @@ const NeedOfWebsite = () => {
       icon: Users,
       title: "GENDER NEUTRAL",
       description:
-        "Enhance your self-care ritual with bath, body, and personal care products for everyone.",
+        "Enhance your self-care ritual with supplies, and personal care products for everyone.",
     },
   ];
   return (
     <div className="container mx-auto px-4 mb-[20px] my-[10px]">
-      <h2 className="heading text-center my-[40px]">WHY VIBECART</h2>
+      <h2 className="heading text-center my-[40px]">WHY BOOKSTORECART</h2>
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
         {features.map((feature, index) => (
           <div key={index} className="flex flex-col items-center text-center ">

@@ -65,7 +65,7 @@ export async function createOrder(
     let dataConfig = {
       from: config.auth.user,
       to: user.email,
-      subject: "Order Confirmation - VibeCart",
+      subject: "Order Confirmation - BookstoreCart",
       html: await render(EmailTemplate(newOrder)),
     };
     await transporter.sendMail(dataConfig).then(() => {

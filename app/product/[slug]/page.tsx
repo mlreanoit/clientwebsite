@@ -90,7 +90,7 @@ const ProductPage = async ({
           🎁 Buy Any 3 products and get 1 gift for free
         </p>
         <p className="para mx-4">
-          1 Body wash cleanser + 5 SKINCARE PRODUCTS @ ₹1500
+          1 BAG + 5 SCHOOL SUPPLIES PRODUCTS @ ₱1500
         </p>
       </Marquee>
       <div className="max-w-7xl ownContainer pb-6 px-6 pt-2">
@@ -141,15 +141,15 @@ const ProductPage = async ({
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center py-4">
               <div className="mb-4 lg:mb-0">
                 <div className="flex items-baseline gap-2 ">
-                  <span className="text-2xl lg:text-3xl font-bold text-[#FA6338]">
-                    ₹{product.price}
-                  </span>
+                  {/* <span className="text-2xl lg:text-3xl font-bold text-[#FA6338]">
+                  ₱{product.price}
+                  </span> */}
                   <span className="text-2xl lg:text-3xl font-bold text-green-500">
-                    ₹{product.price}
+                  ₱{product.price}
                   </span>
                   <span>M.R.P:</span>
                   <span className="text-lg text-gray-500 line-through">
-                    ₹{product.priceBefore.toFixed(2)}
+                  ₱{product.priceBefore.toFixed(2)}
                   </span>
                   {product.discount > 0 && (
                     <span className="text-red-500 font-semibold">

@@ -308,7 +308,7 @@ export default function EmailTemplate(orderData: any) {
                                 fontWeight: "600",
                               }}
                             >
-                              ₹ {(product.price * product.qty).toFixed(2)}
+                              ₱ {(product.price * product.qty).toFixed(2)}
                             </td>
                           </tr>
                         ))}
@@ -342,7 +342,7 @@ export default function EmailTemplate(orderData: any) {
                   textAlign: "right",
                 }}
               >
-                ₹{orderData.totalBeforeDiscount}
+                ₱{orderData.totalBeforeDiscount}
               </td>
             </tr>
             {orderData.couponApplied && (
@@ -367,7 +367,7 @@ export default function EmailTemplate(orderData: any) {
                     textAlign: "right",
                   }}
                 >
-                  - ₹
+                  - ₱
                   {(orderData.totalBeforeDiscount - orderData.total).toFixed(2)}
                 </td>
               </tr>
@@ -390,7 +390,7 @@ export default function EmailTemplate(orderData: any) {
                   textAlign: "right",
                 }}
               >
-                + ₹{orderData.taxPrice}
+                + ₱{orderData.taxPrice}
               </td>
             </tr>
             <tr style={{ borderTop: "1px solid #000" }}>
@@ -413,7 +413,7 @@ export default function EmailTemplate(orderData: any) {
                   textAlign: "right",
                 }}
               >
-                ₹{orderData.total}
+                ₱{orderData.total}
               </td>
             </tr>
           </tbody>

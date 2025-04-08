@@ -428,7 +428,7 @@ export default function CheckoutComponent() {
                       Qty: {i.qty}
                     </p>
                     <p className="font-semibold text-sm">
-                      ₹ {i.price} * {i.qty} = ₹{i.price * i.qty}
+                      ₱ {i.price} * {i.qty} = ₱{i.price * i.qty}
                     </p>
                   </div>
                 </div>
@@ -441,13 +441,13 @@ export default function CheckoutComponent() {
                   {data && data?.products?.length === 1 ? "Item" : "Items"}):
                 </span>
                 <span>
-                  <strong>₹ {carttotal}</strong>
+                  <strong>₱ {carttotal}</strong>
                 </span>
               </div>
               <div className="flex justify-between text-green-600">
                 <span>Cart Discount:</span>
                 <span>
-                  <strong>- ₹ {totalSaved}</strong>
+                  <strong>- ₱ {totalSaved}</strong>
                 </span>
               </div>
               <div className="flex justify-between text-green-600">
@@ -467,12 +467,12 @@ export default function CheckoutComponent() {
                     ? "Total: "
                     : "Total before :"}{" "}
                 </span>
-                <span>₹ {data?.cartTotal}</span>
+                <span>₱ {data?.cartTotal}</span>
               </div>
               <div className="mt-[10px] flex flex-col gap-[5px] ">
                 {/* <span className="bg-[#eeeeee75] p-[5px] text-[14px] border border-[#cccccc17]  ">
                 {coupon === "" ? "Total: " : "Total before :"}
-                <b>₹ {cart.cartTotal}</b>
+                <b>₱ {cart.cartTotal}</b>
               </span> */}
                 {discount > 0 && (
                   <span className="discount bg-green-700 text-white p-[5px] text-[14px] border flex justify-between border-[#cccccc17]  ">
@@ -484,7 +484,7 @@ export default function CheckoutComponent() {
                   totalAfterDiscount != "" && (
                     <span className=" p-[5px] text-lg flex justify-between border border-[#cccccc17]  ">
                       Total after Discount :{" "}
-                      <b className="text-[15px] ">₹ {totalAfterDiscount}</b>
+                      <b className="text-[15px] ">₱ {totalAfterDiscount}</b>
                     </span>
                   )}
               </div>

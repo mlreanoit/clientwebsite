@@ -73,27 +73,27 @@ const Card = ({ product, shop }: { product: Product; shop?: boolean }) => {
       <div className="flex items-center gap-2 mb-4">
         <span className="font-semibold text-[13px] sm:text-sm">
           {product.prices.length === 1
-            ? `₹${
+            ? `₱${
                 product.prices[0] - (product.prices[0] * product.discount) / 100
               }`
-            : `From ₹${
+            : `From ₱${
                 product.prices[0] - (product.prices[0] * product.discount) / 100
-              } to ₹${
+              } to ₱${
                 product.prices[product.prices.length - 1] -
                 (product.prices[product.prices.length - 1] * product.discount) /
                   100
               }`}
         </span>
         {/* <span className="text-gray-500 line-through text-sm">
-          ₹{product.originalPrice.toFixed(2)}
+          ₱{product.originalPrice.toFixed(2)}
         </span> */}
       </div>
       {!shop && (
-        <Link href={`/product/${product.id}`}>
-          <Button className="w-full bg-black text-white hover:bg-gray-800">
-            VIEW PRODUCT
-          </Button>
-        </Link>
+       <Link href={`/product/${product.slug}?style=0`}>
+       <Button className="w-full bg-black text-white hover:bg-gray-800">
+         VIEW PRODUCT
+       </Button>
+     </Link>
       )}
     </div>
   );

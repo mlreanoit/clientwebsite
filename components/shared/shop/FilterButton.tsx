@@ -69,7 +69,7 @@ const FilterButton = () => {
             className="mb-2"
           />
           <p className="text-sm">
-            Price: ₹{priceRange[0]} - ₹{priceRange[1]}
+            Price: ₱{priceRange[0]} - ₱{priceRange[1]}
           </p>
         </div>
 

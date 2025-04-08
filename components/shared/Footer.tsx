@@ -7,11 +7,11 @@ export default function Footer() {
     <footer className="bg-[#1c1c1c] text-white py-12 px-4 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold">VIBECART</h2>
+          <h2 className="text-2xl font-bold">BookstoreCart</h2>
           <p className="text-sm">
-            8569 Bond Rd, Elk Grove, California, 95624, United States.
+           #2 Pres. Laurel Highway Tanauan City
           </p>
-          <p className="text-sm">contact@vibecart.com</p>
+          <p className="text-sm">contact@emailbookstorecart.com</p>
           <p className="text-sm">+(916) 685-5555</p>
           <div className="flex space-x-4">
             <Facebook size={20} />
@@ -79,12 +79,12 @@ export default function Footer() {
       </div>
 
       <div className="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-sm">
-        <p>© 2025 VIBECART</p>
+        <p>© 2025 BookstoreCart</p>
         <div className="flex space-x-4 mt-4 md:mt-0">
           <span>Language</span>
-          <span className="font-semibold">United States | English</span>
+          <span className="font-semibold">Philippines | English</span>
           <span>Currency</span>
-          <span className="font-semibold">USD</span>
+          <span className="font-semibold">PESO</span>
         </div>
       </div>
     </footer>

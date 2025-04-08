@@ -5,7 +5,7 @@ import { Loader } from "lucide-react";
 import { Metadata } from "next";
 import React, { Suspense } from "react";
 export const metadata: Metadata = {
-  title: "Secure Checkout | VibeCart",
+  title: "Secure Checkout | BookstoreCart",
   description: "Continue with Secure Checkout - Shop with Confidence.",
 };
 

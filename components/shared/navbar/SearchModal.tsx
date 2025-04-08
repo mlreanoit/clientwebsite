@@ -132,10 +132,10 @@ const SearchModal = ({ setOpen }: { setOpen: any }) => {
                           </h4>
                           <div className="flex items-baseline gap-2">
                             <span className="font-bold">
-                              ₹{product.subProducts[0]?.sizes[0]?.price}
+                              ₱{product.subProducts[0]?.sizes[0]?.price}
                             </span>
                             <span className="text-sm text-gray-500 line-through">
-                              ₹
+                              ₱
                               {product.subProducts[0]?.sizes[0]?.price *
                                 (1 + product.subProducts[0]?.discount / 100)}
                             </span>
@@ -165,7 +165,7 @@ const SearchModal = ({ setOpen }: { setOpen: any }) => {
                           </h4>
                           <div className="flex items-baseline gap-2">
                             <span className="font-bold">
-                              ₹
+                              ₱
                               {product.subProducts[0]?.discount > 0
                                 ? (
                                     product.subProducts[0].sizes[0].price -
@@ -178,10 +178,10 @@ const SearchModal = ({ setOpen }: { setOpen: any }) => {
                             <span className="text-sm text-gray-500 line-through">
                               {product.subProducts[0]?.discount > 0 && (
                                 <div>
-                                  ₹{product.subProducts[0]?.sizes[0]?.price}
+                                  ₱{product.subProducts[0]?.sizes[0]?.price}
                                 </div>
                               )}
-                              {/* ₹{product.subProducts[0]?.sizes[0]?.price} */}
+                              {/* ₱{product.subProducts[0]?.sizes[0]?.price} */}
                             </span>
                           </div>
                         </div>

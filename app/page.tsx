@@ -44,7 +44,7 @@ const HomePage = async () => {
   const transformedBestSellerProducts = topSellingProducts?.products.map(
     (product: any) => ({
       id: product._id,
-      name: product.name,
+      name: product.name ?? "Unknown Product",
       category: product.category, // You might need to format this
       image: product.subProducts[0]?.images[0].url || "", // Adjust to match your image structure
       rating: product.rating,
@@ -64,10 +64,12 @@ const HomePage = async () => {
         }),
     })
   );
-  const transformedNewArrivalProducts = newArrivalProducts?.products.map(
+  const transformedNewArrivalProducts = newArrivalProducts?.products?.length
+  ? newArrivalProducts.products.map(
+
     (product: any) => ({
       id: product._id,
-      name: product.name,
+      name: product.name ?? "Unknown Product",
       category: product.category, // You might need to format this
       image: product.subProducts[0]?.images[0].url || "", // Adjust to match your image structure
       rating: product.rating,
@@ -86,7 +88,7 @@ const HomePage = async () => {
           return a - b;
         }),
     })
-  );
+  ):[];
   const featuredProducts: any = await getAllFeaturedProducts().catch((err) =>
     console.log(err)
   );

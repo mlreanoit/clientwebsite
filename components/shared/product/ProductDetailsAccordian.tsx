@@ -45,7 +45,7 @@ const ProductDetailsAccordian = ({
         {ingredients.length > 0 && (
           <AccordionItem value="item-3">
             <AccordionTrigger className="uppercase subHeading tracking-[1px]">
-              Ingredients
+              Other Details
             </AccordionTrigger>
             <AccordionContent>
               {ingredients.map((i, index) => (

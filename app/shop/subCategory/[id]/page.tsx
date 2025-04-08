@@ -14,7 +14,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const subCategoryName = (await searchParams).name || "";
   return {
-    title: `Buy ${subCategoryName} Products | VibeCart`,
+    title: `Buy ${subCategoryName} Products | BookstoreCart`,
     description: `Shop all ${subCategoryName} products.`,
   };
 }
